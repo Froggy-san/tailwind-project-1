@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/44fb2704eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body class="h-[1000vh]">
+    <header class="">
+      <nav
+        class="container relative mx-auto px-2 transition-all pb-2 lg:pb-0 mb-5"
+      >
+        <main id="logo" class="flex justify-between items-center">
+          <div id="left" class="flex items-center">
+            <!-- Bars -->
+            <div
+              id="nav-items"
+              class="flex w-5 flex-col space-y-1 items-center cursor-pointer"
+            >
+              <div class="w-[90%] h-[.1rem] bg-gray-500"></div>
+              <div class="w-[90%] h-[.1rem] bg-gray-500"></div>
+              <div class="w-[90%] h-[.1rem] bg-gray-500"></div>
+            </div>
+
+            <!-- Bars -->
+            <div id="logo-title" class="flex items-center">
+              <a href="#" class="w-20">
+                <img src="./img/logo-2.png" alt="cat" class="w-full"
+              /></a>
+              <span
+                class="text-[1.2rem] font-semibold bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-trans whitespace-nowrap"
+                >Catzu</span
+              >
+            </div>
+          </div>
+          <!--  Search bar lg -->
+          <form
+            id="search-bar"
+            action=""
+            class="relative w-2/3 text-gray-500 hidden lg:block shadow-xl"
+          >
+            <input
+              type="text"
+              name=""
+              placeholder="Search..."
+              id="searc-result"
+              class="w-full h-full px-3 py-[5px] border border-gray-500 outline-none rounded"
+            />
+            <!-- Search button -->
+            <button class="absolute top-1/2 -translate-y-1/2 right-2">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <!--  Search bar lg -->
+
+          <!-- Account and search bar  -->
+          <div id="account carts" class="flex items-center space-x-5 mr-2">
+            <div
+              id="profile-info"
+              class="w-8 h-8 text-gray-500 rounded shadow-xl border border-gray-500 flex justify-center items-center"
+            >
+              <i class="fa-solid fa-user text-[1.24rem]"></i>
+            </div>
+
+            <div
+              id="carts"
+              class="flex place-content-center relative text-gray-500 text-[1.2rem]"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span
+                id="purchase-count"
+                class="absolute -right-[12px] -bottom-[12px] w-4 h-4 rounded-full border border-gray-500 flex justify-center text-gray-400 items-center text-xs"
+                >0</span
+              >
+            </div>
+          </div>
+        </main>
+
+        <div id="search-bar">
+          <form
+            id="search-bar"
+            action=""
+            class="relative w-10/12 lg:hidden mx-auto mb-2 shadow-xl"
+          >
+            <input
+              type="text"
+              name=""
+              placeholder="Search..."
+              id="searc-result"
+              class="w-full h-full px-3 py-[5px] border border-gray-500 outline-none rounded"
+            />
+            <!-- Search button -->
+            <button class="absolute top-1/2 -translate-y-1/2 right-2">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+
+        <div
+          id="bar-borders"
+          class="flex px-3 sm:px-0 absolute left-0 bottom-1 justify-between items-center w-full"
+        >
+          <div
+            id="left-bar"
+            class="w-[47%] md:w-[49%] h-[.8px] bg-gray-500 relative flex justify-between items-center before:contant-[''] before:w-[3.5px] before:h-[3.5px] before:absolute before:top-[63%] before:-translate-y-[50%] before:right-2 before:bg-gray-500 before:rounded-full"
+          >
+            <span class="w-[3px] h-[3px] rounded-full bg-gray-500"></span>
+
+            <span class="w-[5.5px] h-[5.5px] rounded-full bg-gray-500"></span>
+          </div>
+
+          <span class="w-2 h-2 rounded-full border border-gray-500"></span>
+
+          <div
+            id="right-bar"
+            class="w-[47%] md:w-[49%] h-[.8px] bg-gray-500 flex justify-between items-center relative before:contant-[''] before:w-[3.5px] before:h-[3.5px] before:absolute before:top-[63%] before:-translate-y-[50%] before:left-2 before:bg-gray-500 before:rounded-full"
+          >
+            <span class="w-[5px] h-[5px] rounded-full bg-gray-500"></span>
+
+            <span class="w-[3px] h-[3px] rounded-full bg-gray-500"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      class="absolute rotate-[150deg] -z-10 -left-[600px] top-44 w-[1000px] h-[30px] rounded-full bg-pink-600"
+    ></div>
+    <div
+      class="absolute rotate-[150deg] -z-10 -left-[700px] top-44 w-[1000px] h-[30px] bg-blue-600"
+    ></div>
+
+    <section id="slider-ads" class="text-2xl container mx-auto md:rounded">
+      <div
+        class="carousel relative w-full h-[300px] md:h-[450px] lg:h-[750px] md:rounded"
+        data-carousel
+      >
+        <ul data-slides class="control-motion rounded">
+          <li
+            class="slide absolute inset-0 opacity-0 w-full h-full img-full"
+            data-active
+          >
+            <img src="./img/CheezIt_Teaser1_Still.png" class="md:rounded-md" />
+          </li>
+
+          <li class="slide absolute inset-0 opacity-0 h-full w-full img-full">
+            <img src="./img/bear_aotw.jpg" class="md:rounded-md" />
+          </li>
+
+          <li class="slide absolute inset-0 opacity-0 h-full w-full img-full">
+            <img src="./img/MS-banner.jpg" class="md:rounded-md" />
+          </li>
+        </ul>
+        <i
+          class="fa-solid fa-arrow-left absolute left-6 top-1/2 -translate-y-1/2 cursor-pointer carousel-button prev"
+          data-carousel-button="prev"
+        ></i>
+
+        <i
+          class="fa-solid fa-arrow-right absolute right-6 top-1/2 -translate-y-1/2 cursor-pointer carousel-button next"
+          data-carousel-button="next"
+        ></i>
+      </div>
+    </section>
+
+    <section id="products-container" class="container mt-48 mx-auto">
+      <div
+        id="product-card"
+        class="rounded flex flex-col p-2 border border-black w-[250px]"
+      >
+        <img src="./img/img-10.jpg" alt="" />
+        <p class="pt-2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+          dicta nobis sequi, est ratione quasi quia repellendus quis quo. Quam
+          ut numquam sunt, ratione recusandae itaque quos libero earum. Vitae.
+        </p>
+      </div>
+
+      <div
+        id="product-card"
+        class="rounded flex flex-col p-2 border border-black w-[250px]"
+      >
+        <img src="./img/img-10.jpg" alt="" />
+        <p class="pt-2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+          dicta nobis sequi, est ratione quasi quia repellendus quis quo. Quam
+          ut numquam sunt, ratione recusandae itaque quos libero earum. Vitae.
+        </p>
+      </div>
+
+      <div
+        id="product-card"
+        class="rounded flex flex-col p-2 border border-black w-[250px]"
+      >
+        <img src="./img/img-10.jpg" alt="" />
+        <p class="pt-2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+          dicta nobis sequi, est ratione quasi quia repellendus quis quo. Quam
+          ut numquam sunt, ratione recusandae itaque quos libero earum. Vitae.
+        </p>
+      </div>
+
+      <div
+        id="product-card"
+        class="rounded flex flex-col p-2 border border-black w-[250px]"
+      >
+        <img src="./img/img-10.jpg" alt="" />
+        <p class="pt-2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+          dicta nobis sequi, est ratione quasi quia repellendus quis quo. Quam
+          ut numquam sunt, ratione recusandae itaque quos libero earum. Vitae.
+        </p>
+      </div>
+    </section>
+
+    <div
+      id="layout"
+      class="fixed remove-ele left-0 top-0 w-full h-screen bg-gray-400 opacity-70"
+    ></div>
+
+    <section
+      id="side-bar"
+      class="w-[60px] transition-all remove-bar md:w-[160px] h-fit pb-2 bg-[#1c2537] fixed left-0 top-1/2 -translate-y-1/2 rounded-r-lg flex flex-col justify-between"
+    >
+      <div id="logo-title" class="flex items-center">
+        <a href="#" class="w-20">
+          <img src="./img/logo-2.png" alt="cat" class="w-full"
+        /></a>
+        <span
+          class="text-[1.2rem] font-semibold bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text text-trans whitespace-nowrap hidden md:block"
+          >Catzu</span
+        >
+      </div>
+
+      <ul
+        id="list"
+        class="flex flex-col text-gray-300 items-center md:items-start space-y-4 flex-1"
+      >
+        <li class="md:pl-3 text-gray-300 font-semibold">
+          <h2>Menu</h2>
+        </li>
+
+        <li
+          class="item flex mode-change cursor-pointer space-x-2 w-fit md:w-[90%] md:p-1 md:pl-2 p-2 rounded-md md:ml-2 items-center transition-all hover:bg-[#293751]"
+        >
+          <i class="fa-solid fa-house"></i>
+          <span class="hidden md:block">Home</span>
+        </li>
+
+        <li
+          class="item flex mode-active space-x-2 w-fit md:w-[90%] md:p-1 md:pl-2 p-2 rounded-md md:ml-2 items-center transition-all hover:bg-[#293751] cursor-pointer"
+        >
+          <i class="fa-solid fa-chart-line"></i>
+          <span class="hidden md:block">Activities</span>
+        </li>
+
+        <li
+          class="item flex space-x-2 w-fit md:w-[90%] md:p-1 md:pl-2 p-2 cursor-pointer rounded-md md:ml-2 items-center transition-all hover:bg-[#293751]"
+        >
+          <i class="fa-solid fa-list-check"></i>
+          <span class="hidden md:block">Tasks</span>
+        </li>
+        <li
+          class="item flex cursor-pointer space-x-2 w-fit md:w-[90%] md:p-1 md:pl-2 p-2 rounded-md md:ml-2 items-center transition-all hover:bg-[#293751]"
+        >
+          <i class="fa-regular fa-user"></i>
+          <span class="hidden md:block">Account</span>
+        </li>
+
+        <li
+          class="item flex cursor-pointer space-x-2 w-fit md:w-[90%] md:p-1 md:pl-2 p-2 rounded-md md:ml-2 items-center transition-all hover:bg-[#293751]"
+        >
+          <i class="fa-regular fa-bell"></i>
+          <span class="hidden md:block">Notfications</span>
+        </li>
+
+        <hr class="w-[85%] h-[2px] mx-auto mt-2 bg-[#293751] border-none" />
+
+        <li
+          class="item flex md:mt-4 cursor-pointer space-x-2 w-fit md:w-[90%] md:p-1 md:pl-2 p-2 rounded-md md:ml-2 items-center transition-all hover:bg-[#293751]"
+        >
+          <i class="fa-solid fa-sliders"></i>
+          <span class="hidden md:block">Settings</span>
+        </li>
+
+        <li
+          class="item flex cursor-pointer space-x-2 w-fit md:w-[90%] md:p-1 md:pl-2 p-2 rounded-md md:ml-2 items-center transition-all hover:bg-[#293751]"
+        >
+          <i class="fa-regular fa-flag"></i>
+          <span class="hidden md:block">Report</span>
+        </li>
+
+        <li
+          class="item flex cursor-pointer space-x-2 w-fit md:w-[90%] md:p-1 md:pl-2 p-2 rounded-md md:ml-2 items-center transition-all hover:bg-[#293751]"
+        >
+          <i class="fa-solid fa-circle-info"></i>
+          <span class="hidden md:block">Support</span>
+        </li>
+      </ul>
+
+      <div id="themes" class="flex flex-col items-center mt-2 flex-1">
+        <div
+          id=""
+          class="flex md:font-medium flex-col md:flex-row w-fit md:w-[90%] items-center justify-between bg-[#18202f] border border-[#293751] p-[2px] rounded-md"
+        >
+          <div
+            class="switch light-theme cursor-pointer hover:bg-[#293751] rounded-md md:w-1/2 flex justify-center text-gray-400 h-full p-2 items-center"
+          >
+            <i class="fa-regular fa-sun"></i>
+          </div>
+
+          <div
+            class="switch dark-theme cursor-pointer hover:bg-[#293751] flex justify-center h-full rounded-md mode-change md:w-1/2 p-2 items-center"
+          >
+            <i class="fa-regular fa-moon"></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="side-account"
+        class="flex flex-col md:flex-row md:mt-5 text-gray-400 justify-around flex-1 items-center"
+      >
+        <div
+          id="profile-info"
+          class="w-8 h-8 cursor-pointer my-2 md:my-0 rounded shadow-xl border border-gray-400 flex justify-center items-center"
+        >
+          <i class="fa-solid fa-user text-[1.24rem]"></i>
+        </div>
+
+        <div class="hidden md:block text-[9px]">
+          <p>Catzu_me</p>
+          <p>Catzu@yahoo.com</p>
+        </div>
+
+        <i class="fa-solid fa-right-from-bracket cursor-pointer"></i>
+      </div>
+    </section>
+  </body>
+</html>
